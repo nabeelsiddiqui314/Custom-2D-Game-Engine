@@ -3,6 +3,7 @@
 #include "ResourceManager.h"
 #include "GUI.h"
 #include "EntityManager.h"
+#include "MapManager.h"
 
 namespace Engine {
 	struct data {
@@ -10,5 +11,6 @@ namespace Engine {
 		ResourceManager* assets;
 		GUI* gui;
 		EntityManager* entity;
+		MapManager* map;
 	};
 }

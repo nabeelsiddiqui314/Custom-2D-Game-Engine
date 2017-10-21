@@ -25,7 +25,7 @@
     <Filter Include="Source Files\Test">
       <UniqueIdentifier>{fca6892c-c0b8-4a5d-a35f-5e2382620d69}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\E_properties">
+    <Filter Include="Header Files\Engine\E_properties">
       <UniqueIdentifier>{238de5b5-e7dc-49a9-a8a4-8a7f15c940c5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -70,15 +70,18 @@
       <Filter>Header Files\Engine</Filter>
     </ClInclude>
     <ClInclude Include="InitialState.h">
-      <Filter>Header Files\E_properties</Filter>
+      <Filter>Header Files\Engine\E_properties</Filter>
     </ClInclude>
     <ClInclude Include="Definitions.h">
-      <Filter>Header Files\E_properties</Filter>
+      <Filter>Header Files\Engine\E_properties</Filter>
     </ClInclude>
     <ClInclude Include="TestEntity.h">
       <Filter>Header Files\Test</Filter>
     </ClInclude>
     <ClInclude Include="EntityManager.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="MapManager.h">
       <Filter>Header Files\Engine</Filter>
     </ClInclude>
   </ItemGroup>
@@ -117,6 +120,9 @@
       <Filter>Source Files\Test</Filter>
     </ClCompile>
     <ClCompile Include="EntityManager.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="MapManager.cpp">
       <Filter>Source Files\Engine</Filter>
     </ClCompile>
   </ItemGroup>

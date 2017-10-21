@@ -2,7 +2,7 @@
 #include "StateManager.h"
 #include "ResourceManager.h"
 
-#define SCREEN_WIDTH 800
-#define SCREEN_HEIGHT 600
+#define SCREEN_WIDTH 1024
+#define SCREEN_HEIGHT 768
 
 #define TITLE "GameEngine"
