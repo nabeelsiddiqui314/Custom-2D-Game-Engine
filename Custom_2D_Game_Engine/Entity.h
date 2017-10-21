@@ -11,8 +11,10 @@ namespace Engine {
 		Entity();
 		~Entity();
 	public:
-		virtual bool Update();
-		virtual void CheckCollision(Entity* entity);
+		void Gravity();
+		virtual bool Update(sf::RenderWindow* window);
+		bool CheckCollision(Entity* entity);
+		virtual void Collision(Entity* ent) {}
 		void Destroy();
 
 		int GroupID() const;
@@ -20,8 +22,17 @@ namespace Engine {
 	protected:
 		int m_groupId;
 		bool m_exists;
-	private:
 
+		sf::Vector2f m_velocity;
+		float m_speed;
+
+		bool m_gravity;
+		float m_GravityAcceleration = 1.1;
+		float m_GravitySpeed = 2.5;
+		float m_MaxGravitySpeed = 5;
+
+		int hp;
+		int attackDamage;
 	};
 }
 

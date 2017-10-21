@@ -10,7 +10,7 @@ namespace Engine {
 		InitialState(data* data) : m_data(data) {  }
 		~InitialState() {}
 	public:
-		void Init(sf::RenderWindow* window) { m_data->machine->SetState(new StateOne(m_data)); }
+		void Init(sf::RenderWindow* window) { m_data->state->SetState(new StateOne(m_data)); }
 	private:
 		data* m_data;
 	};

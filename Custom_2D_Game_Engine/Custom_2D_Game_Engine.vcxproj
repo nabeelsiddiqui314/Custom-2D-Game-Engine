@@ -156,6 +156,7 @@
     <ClInclude Include="data.h" />
     <ClInclude Include="Definitions.h" />
     <ClInclude Include="Entity.h" />
+    <ClInclude Include="EntityManager.h" />
     <ClInclude Include="GUI.h" />
     <ClInclude Include="Particle.h" />
     <ClInclude Include="ResourceManager.h" />
@@ -171,6 +172,7 @@
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="EntityManager.cpp" />
     <ClCompile Include="GUI.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Particle.cpp" />

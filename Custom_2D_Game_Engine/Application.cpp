@@ -6,11 +6,9 @@ namespace Engine {
 		this->m_window.create(sf::VideoMode(width, height), title);
 		m_window.setFramerateLimit(60);
 		m_data = new data();
-		m_data->machine = new StateManager();
-		m_data->assets = new ResourceManager();
-		m_data->gui = new GUI(&m_window);
-		m_data->machine->SetWindow(&m_window);
-		m_data->machine->SetState(new InitialState(m_data));
+		m_data->state = new StateManager();
+		m_data->state->SetWindow(&m_window);
+		m_data->state->SetState(new InitialState(m_data));
 		this->Run();
 	}
 
@@ -26,16 +24,17 @@ namespace Engine {
 			m_window.clear();
 			while (m_accumulator > m_ups) {
 				m_accumulator -= m_ups;
-				this->m_data->machine->Update();
+				this->m_data->state->Update();
 			}
 			m_accumulator += m_clock.restart();
-			this->m_data->machine->Render();
+			this->m_data->state->Render();
 			m_window.display();
 		}
 	}
 
 
 	Application::~Application() {
+		delete m_data->state;
 		delete m_data;
 	}
 }

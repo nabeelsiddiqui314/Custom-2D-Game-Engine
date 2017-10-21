@@ -23,5 +23,5 @@ private:
 	Engine::Particle* m_particle;
 	sf::Clock m_clock;
 	sf::Time m_time;
-	Engine::Entity* ent;
+	sf::View m_view;
 };

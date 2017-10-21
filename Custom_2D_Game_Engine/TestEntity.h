@@ -8,7 +8,8 @@ public:
 	TestEntity(Engine::data* data);
 	~TestEntity();
 public:
-	bool Update();
+	bool Update(sf::RenderWindow* window);
+	void Collision(Entity* entity);
 private:
 	Engine::data* m_data;
 };
