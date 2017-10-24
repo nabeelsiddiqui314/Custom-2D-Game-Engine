@@ -93,7 +93,7 @@
       <AdditionalIncludeDirectories>C:\Users\Nabeel\Documents\Dev\C++\Custom_2D_Game_Engine\Custom_2D_Game_Engine\SFML_lib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
 =======
       <AdditionalIncludeDirectories>C:\Users\Nabeel\Desktop\VS\Custom_2D_Game_Engine\Custom_2D_Game_Engine\SFML_lib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
->>>>>>> parent of 548c27e... Organised project directory
+>>>>>>> parent of 8cdd505... Organised project directory
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -102,7 +102,7 @@
       <AdditionalLibraryDirectories>C:\Users\Nabeel\Documents\Dev\C++\Custom_2D_Game_Engine\Custom_2D_Game_Engine\SFML_lib\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
 =======
       <AdditionalLibraryDirectories>C:\Users\Nabeel\Desktop\VS\Custom_2D_Game_Engine\Custom_2D_Game_Engine\SFML_lib\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
->>>>>>> parent of 548c27e... Organised project directory
+>>>>>>> parent of 8cdd505... Organised project directory
       <AdditionalDependencies>sfml-system-d.lib;sfml-graphics-d.lib;sfml-network-d.lib;sfml-window-d.lib;sfml-audio-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -132,7 +132,7 @@
       <AdditionalIncludeDirectories>C:\Users\Nabeel\Documents\Dev\C++\Custom_2D_Game_Engine\Custom_2D_Game_Engine\SFML_lib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
 =======
       <AdditionalIncludeDirectories>C:\Users\Nabeel\Desktop\VS\Custom_2D_Game_Engine\Custom_2D_Game_Engine\SFML_lib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
->>>>>>> parent of 548c27e... Organised project directory
+>>>>>>> parent of 8cdd505... Organised project directory
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -143,7 +143,7 @@
       <AdditionalLibraryDirectories>C:\Users\Nabeel\Documents\Dev\C++\Custom_2D_Game_Engine\Custom_2D_Game_Engine\SFML_lib\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
 =======
       <AdditionalLibraryDirectories>C:\Users\Nabeel\Desktop\VS\Custom_2D_Game_Engine\Custom_2D_Game_Engine\SFML_lib\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
->>>>>>> parent of 548c27e... Organised project directory
+>>>>>>> parent of 8cdd505... Organised project directory
       <AdditionalDependencies>sfml-system.lib;sfml-graphics.lib;sfml-network.lib;sfml-window.lib;sfml-audio.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -232,7 +232,7 @@
     <ClCompile Include="StateOne.cpp" />
     <ClCompile Include="StateTwo.cpp" />
     <ClCompile Include="stdafx.cpp">
->>>>>>> parent of 548c27e... Organised project directory
+>>>>>>> parent of 8cdd505... Organised project directory
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -242,7 +242,7 @@
     <ClCompile Include="src\TestEntity.cpp" />
 =======
     <ClCompile Include="TestEntity.cpp" />
->>>>>>> parent of 548c27e... Organised project directory
+>>>>>>> parent of 8cdd505... Organised project directory
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

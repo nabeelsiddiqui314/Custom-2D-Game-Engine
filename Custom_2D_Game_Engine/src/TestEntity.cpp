@@ -11,9 +11,6 @@ TestEntity::TestEntity(Engine::data* data) : m_data(data) {
 }
 
 bool TestEntity::Update(sf::RenderWindow* window) {
-	if (m_data->map->CheckCollision(this, Engine::DOWN) == 6) {
-		move(0, -abs(m_GravitySpeed));
-	}
 	Entity::Update(window);
 	return true;
 }

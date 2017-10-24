@@ -16,7 +16,6 @@ void StateOne::Init(sf::RenderWindow* window) {
 	m_button.setPosition(300, 300);
 	m_button.setFillColor(sf::Color::Green);
 	m_button.setSize(sf::Vector2f(100, 100));
-	m_data->map->Load("RPG1.map");
 	m_data->entity->Add("test1", new TestEntity(m_data));
 }
 
@@ -33,7 +32,6 @@ void StateOne::Update(sf::RenderWindow* window) {
 }
 
 void StateOne::Render(sf::RenderWindow* window) {
-	window->draw(*m_data->map);
 	window->draw(m_rect);
 	window->draw(m_button);
 	m_data->entity->Render(window);

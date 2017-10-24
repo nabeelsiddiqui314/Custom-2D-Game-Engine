@@ -217,7 +217,7 @@
     </ClCompile>
     <ClCompile Include="MapManager.cpp">
       <Filter>Source Files\Engine</Filter>
->>>>>>> parent of 548c27e... Organised project directory
+>>>>>>> parent of 8cdd505... Organised project directory
     </ClCompile>
   </ItemGroup>
 </Project>
