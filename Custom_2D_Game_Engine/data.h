@@ -14,3 +14,4 @@ namespace Engine {
 		MapManager* map;
 	};
 }
+// Data structure for management classes.
