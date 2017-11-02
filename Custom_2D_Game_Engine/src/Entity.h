@@ -1,8 +1,6 @@
 #pragma once
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include "ResourceManager.h"
-#include "GUI.h"
 
 namespace Engine {
 	class Entity : public sf::RectangleShape
@@ -10,6 +8,7 @@ namespace Engine {
 	public:
 		Entity();
 		~Entity();
+
 	public:
 		void Gravity();
 		virtual bool Update(sf::RenderWindow* window);
@@ -19,8 +18,9 @@ namespace Engine {
 
 		int GroupID() const;
 		bool Exists() const;
+
 	protected:
-		int m_groupId;
+		int m_groupId; // Every Entity has a unique id
 		bool m_exists;
 
 		sf::Vector2f m_velocity;

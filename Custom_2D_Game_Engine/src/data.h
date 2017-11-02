@@ -4,6 +4,8 @@
 #include "GUI.h"
 #include "EntityManager.h"
 #include "MapManager.h"
+#include "Animation.h"
+#include "Definitions.h"
 
 namespace Engine {
 	struct data {
@@ -12,5 +14,7 @@ namespace Engine {
 		GUI* gui;
 		EntityManager* entity;
 		MapManager* map;
+		Animation* animation;
 	};
 }
+// Data structure for management classes.

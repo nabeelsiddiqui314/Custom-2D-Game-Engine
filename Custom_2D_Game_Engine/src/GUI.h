@@ -9,9 +9,9 @@ namespace Engine {
 		GUI(sf::RenderWindow* window);
 		~GUI();
 	public:
-		bool isHovered(sf::RectangleShape* button);
-		bool isClicked(sf::RectangleShape* button, float delayTime);
-		void SetPointer(sf::RectangleShape* pointer, bool hideMouse);
+		bool isHovered(sf::RectangleShape& button);
+		bool isClicked(sf::RectangleShape& button, float delayTime);
+		void SetPointer(sf::RectangleShape& pointer, bool hideMouse);
 	private:
 		sf::RenderWindow& m_window;
 		sf::Clock m_clock;

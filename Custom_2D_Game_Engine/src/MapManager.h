@@ -4,7 +4,7 @@
 #include <string>
 #include <fstream>
 #include <sstream>
-#include "entity.h"
+#include "Entity.h"
 
 namespace Engine {
 	typedef enum {
@@ -35,7 +35,7 @@ namespace Engine {
 		int m_tileHeight = 0;
 		int* m_MapData;
 	private:
-		sf::Texture* m_texture;
-		sf::Image* m_tilesetImg;
+		sf::Texture m_texture;
+		sf::Image m_tilesetImg;
 	};
 }

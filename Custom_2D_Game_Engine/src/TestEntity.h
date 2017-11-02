@@ -12,5 +12,6 @@ public:
 	void Collision(Entity* entity);
 private:
 	Engine::data* m_data;
+	sf::Vector2i coords[2] = { sf::Vector2i(2,2), sf::Vector2i(50,50) };
 };
 

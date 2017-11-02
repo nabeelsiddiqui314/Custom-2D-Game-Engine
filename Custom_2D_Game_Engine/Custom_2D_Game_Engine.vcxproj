@@ -89,20 +89,12 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-<<<<<<< HEAD
       <AdditionalIncludeDirectories>C:\Users\Nabeel\Documents\Dev\C++\Custom_2D_Game_Engine\Custom_2D_Game_Engine\SFML_lib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-=======
-      <AdditionalIncludeDirectories>C:\Users\Nabeel\Desktop\VS\Custom_2D_Game_Engine\Custom_2D_Game_Engine\SFML_lib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
->>>>>>> parent of 8cdd505... Organised project directory
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-<<<<<<< HEAD
       <AdditionalLibraryDirectories>C:\Users\Nabeel\Documents\Dev\C++\Custom_2D_Game_Engine\Custom_2D_Game_Engine\SFML_lib\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-=======
-      <AdditionalLibraryDirectories>C:\Users\Nabeel\Desktop\VS\Custom_2D_Game_Engine\Custom_2D_Game_Engine\SFML_lib\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
->>>>>>> parent of 8cdd505... Organised project directory
       <AdditionalDependencies>sfml-system-d.lib;sfml-graphics-d.lib;sfml-network-d.lib;sfml-window-d.lib;sfml-audio-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -128,22 +120,14 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-<<<<<<< HEAD
       <AdditionalIncludeDirectories>C:\Users\Nabeel\Documents\Dev\C++\Custom_2D_Game_Engine\Custom_2D_Game_Engine\SFML_lib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-=======
-      <AdditionalIncludeDirectories>C:\Users\Nabeel\Desktop\VS\Custom_2D_Game_Engine\Custom_2D_Game_Engine\SFML_lib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
->>>>>>> parent of 8cdd505... Organised project directory
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-<<<<<<< HEAD
       <AdditionalLibraryDirectories>C:\Users\Nabeel\Documents\Dev\C++\Custom_2D_Game_Engine\Custom_2D_Game_Engine\SFML_lib\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-=======
-      <AdditionalLibraryDirectories>C:\Users\Nabeel\Desktop\VS\Custom_2D_Game_Engine\Custom_2D_Game_Engine\SFML_lib\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
->>>>>>> parent of 8cdd505... Organised project directory
       <AdditionalDependencies>sfml-system.lib;sfml-graphics.lib;sfml-network.lib;sfml-window.lib;sfml-audio.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -168,7 +152,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
+    <ClInclude Include="src\Animation.h" />
     <ClInclude Include="src\Application.h" />
     <ClInclude Include="src\data.h" />
     <ClInclude Include="src\Definitions.h" />
@@ -188,6 +172,7 @@
     <ClInclude Include="src\TestEntity.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Animation.cpp" />
     <ClCompile Include="src\Application.cpp" />
     <ClCompile Include="src\Entity.cpp" />
     <ClCompile Include="src\EntityManager.cpp" />
@@ -200,49 +185,12 @@
     <ClCompile Include="src\StateOne.cpp" />
     <ClCompile Include="src\StateTwo.cpp" />
     <ClCompile Include="src\stdafx.cpp">
-=======
-    <ClInclude Include="Application.h" />
-    <ClInclude Include="data.h" />
-    <ClInclude Include="Definitions.h" />
-    <ClInclude Include="Entity.h" />
-    <ClInclude Include="EntityManager.h" />
-    <ClInclude Include="GUI.h" />
-    <ClInclude Include="MapManager.h" />
-    <ClInclude Include="Particle.h" />
-    <ClInclude Include="ResourceManager.h" />
-    <ClInclude Include="State.h" />
-    <ClInclude Include="StateManager.h" />
-    <ClInclude Include="StateOne.h" />
-    <ClInclude Include="StateTwo.h" />
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
-    <ClInclude Include="InitialState.h" />
-    <ClInclude Include="TestEntity.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Application.cpp" />
-    <ClCompile Include="Entity.cpp" />
-    <ClCompile Include="EntityManager.cpp" />
-    <ClCompile Include="GUI.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="MapManager.cpp" />
-    <ClCompile Include="Particle.cpp" />
-    <ClCompile Include="ResourceManager.cpp" />
-    <ClCompile Include="StateManager.cpp" />
-    <ClCompile Include="StateOne.cpp" />
-    <ClCompile Include="StateTwo.cpp" />
-    <ClCompile Include="stdafx.cpp">
->>>>>>> parent of 8cdd505... Organised project directory
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-<<<<<<< HEAD
     <ClCompile Include="src\TestEntity.cpp" />
-=======
-    <ClCompile Include="TestEntity.cpp" />
->>>>>>> parent of 8cdd505... Organised project directory
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
