@@ -16,9 +16,9 @@ void StateOne::Init(sf::RenderWindow* window) {
 	m_rect.setPosition(50, 50);
 	m_rect.setSize(sf::Vector2f(64, 64));
 	m_rect.setFillColor(sf::Color::Blue);
-	m_button.setPosition(300, 300);
+	m_button.setPosition(54, 49);
 	m_button.setFillColor(sf::Color::Green);
-	m_button.setSize(sf::Vector2f(100, 100));
+	m_button.setSize(sf::Vector2f(64, 64));
 	m_data->entity->Add("test1", new TestEntity(m_data));
 }
 
@@ -35,6 +35,10 @@ void StateOne::HandleInput(sf::RenderWindow* window) {
 
 void StateOne::Update(sf::RenderWindow* window) {
 	m_data->entity->Update(window);
+	std::cout << m_data->range.CheckDistance(m_rect, m_button) << std::endl;
+	if (m_data->range.isInRange(m_rect, m_button, 5)) {
+		//std::cout << " In range";
+	}
 }
 
 void StateOne::Render(sf::RenderWindow* window) {

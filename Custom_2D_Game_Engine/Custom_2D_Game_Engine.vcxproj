@@ -152,6 +152,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\RangeChecker.h" />
     <ClInclude Include="src\Animation.h" />
     <ClInclude Include="src\Application.h" />
     <ClInclude Include="src\data.h" />
@@ -172,6 +173,7 @@
     <ClInclude Include="src\TestEntity.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\RangeChecker.cpp" />
     <ClCompile Include="src\Animation.cpp" />
     <ClCompile Include="src\Application.cpp" />
     <ClCompile Include="src\Entity.cpp" />

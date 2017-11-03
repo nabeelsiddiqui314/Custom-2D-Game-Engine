@@ -5,6 +5,8 @@
 #include "EntityManager.h"
 #include "MapManager.h"
 #include "Animation.h"
+#include "RangeChecker.h"
+
 #include "Definitions.h"
 
 namespace Engine {
@@ -15,6 +17,7 @@ namespace Engine {
 		EntityManager* entity;
 		MapManager* map;
 		Animation* animation;
+		RangeChecker range;
 	};
 }
 // Data structure for management classes.
