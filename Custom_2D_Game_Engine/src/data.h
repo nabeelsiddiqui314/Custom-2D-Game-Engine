@@ -11,13 +11,13 @@
 
 namespace Engine {
 	struct data {
-		StateManager* state;
+		StateManager*    state;
 		ResourceManager* assets;
-		GUI* gui;
-		EntityManager* entity;
-		MapManager* map;
-		Animation* animation;
-		RangeChecker range;
+		GUI*             gui;
+		EntityManager*   entity;
+		MapManager*      map;
+		Animation*       animation;
+		RangeChecker     range;
 	};
 }
 // Data structure for management classes.

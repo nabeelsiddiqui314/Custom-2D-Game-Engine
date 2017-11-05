@@ -8,10 +8,10 @@ namespace Engine {
 	class RangeChecker
 	{
 	public:
-		RangeChecker();
+		 RangeChecker();
 		~RangeChecker();
 	public:
-		float CheckDistance(sf::RectangleShape& rect1, sf::RectangleShape& rect2);
-		bool isInRange(sf::RectangleShape& rect1, sf::RectangleShape& rect2, float radius);
+		float CheckDistance (sf::RectangleShape& rect1, sf::RectangleShape& rect2)               const;
+		bool  isInRange     (sf::RectangleShape& rect1, sf::RectangleShape& rect2, float radius) const;
 	};
 }

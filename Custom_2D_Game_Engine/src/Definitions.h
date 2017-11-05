@@ -2,7 +2,7 @@
 #include "StateManager.h"
 #include "ResourceManager.h"
 
-#define SCREEN_WIDTH 1024
-#define SCREEN_HEIGHT 768
+const int SCREEN_WIDTH  = 1024;
+const int SCREEN_HEIGHT = 768;
 
-#define TITLE "GameEngine"
+const std::string TITLE = "GameEngine";

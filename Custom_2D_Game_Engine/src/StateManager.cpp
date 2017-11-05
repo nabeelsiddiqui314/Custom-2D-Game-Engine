@@ -45,7 +45,7 @@ namespace Engine {
 		}
 	}
 
-	void StateManager::Update() {
+	void StateManager::Update() const {
 		if (m_state != NULL) {
 			m_state->HandleInput(m_window);
 			m_state->Update(m_window);
@@ -60,7 +60,7 @@ namespace Engine {
 		}
 	}
 
-	void StateManager::Render() {
+	void StateManager::Render() const {
 		if (m_state != NULL) {
 			m_state->Render(m_window);
 		}

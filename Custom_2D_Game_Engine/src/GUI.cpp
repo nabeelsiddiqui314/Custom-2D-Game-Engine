@@ -6,7 +6,7 @@ namespace Engine {
 		
 	}
 
-	bool GUI::isHovered(sf::RectangleShape& button) {
+	bool GUI::isHovered(sf::RectangleShape& button) const {
 		sf::IntRect _button(button.getPosition().x, button.getPosition().y, button.getGlobalBounds().width, button.getGlobalBounds().height);
 		if (_button.contains(sf::Mouse::getPosition(m_window))) {
 			return true;
@@ -16,7 +16,19 @@ namespace Engine {
 		}
 	}
 
-	bool GUI::isClicked(sf::RectangleShape& button, float delayTime) {
+	void GUI::SetPointer(sf::RectangleShape& pointer, bool hideMouse) const {
+		if (hideMouse) {
+			m_window.setMouseCursorVisible(false);
+		}
+		else {
+			m_window.setMouseCursorVisible(true);
+		}
+		pointer.setOrigin(pointer.getGlobalBounds().width / 2, pointer.getGlobalBounds().height / 2);
+		sf::Vector2f mousePos(sf::Mouse::getPosition(m_window));
+		pointer.setPosition(mousePos);
+	}
+
+	bool GUI::isClicked(sf::RectangleShape& button, float delayTime) const {
 		m_delayTime = m_clock.getElapsedTime();
 		if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
 			sf::IntRect button(button.getPosition().x, button.getPosition().y, button.getGlobalBounds().width, button.getGlobalBounds().height);
@@ -30,17 +42,6 @@ namespace Engine {
 		}
 	}
 
-	void GUI::SetPointer(sf::RectangleShape& pointer, bool hideMouse) {
-		if (hideMouse) {
-			m_window.setMouseCursorVisible(false);
-		}
-		else {
-			m_window.setMouseCursorVisible(true);
-		}
-		pointer.setOrigin(pointer.getGlobalBounds().width/2, pointer.getGlobalBounds().height / 2);
-		sf::Vector2f mousePos(sf::Mouse::getPosition(m_window));
-		pointer.setPosition(mousePos);
-	}
 
 	GUI::~GUI()
 	{

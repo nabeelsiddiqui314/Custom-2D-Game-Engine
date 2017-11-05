@@ -10,10 +10,10 @@ namespace Engine {
 		EntityManager();
 		~EntityManager();
 	public:
-		void Add(std::string name, Entity* entity);
-		Entity* Get(std::string name);
-		bool Update(sf::RenderWindow* window);
-		void Render(sf::RenderWindow* window);
+		void    Add(std::string name, Entity* entity);
+		Entity* Get(std::string name)				const;
+		bool    Update(sf::RenderWindow* window);
+		void    Render(sf::RenderWindow* window)	const;
 	private:
 		std::unordered_map <std::string, Entity*> m_entities;
 	};

@@ -14,9 +14,9 @@ public:
 	void Render(sf::RenderWindow* window);
 	void Destroy(sf::RenderWindow* window);
 private:
-	Engine::data* m_data;
+	Engine::data*      m_data;
 	sf::RectangleShape m_rect;
-	sf::Clock m_clock;
-	sf::Time m_time;
+	sf::Clock          m_clock;
+	sf::Time           m_time;
 };
 

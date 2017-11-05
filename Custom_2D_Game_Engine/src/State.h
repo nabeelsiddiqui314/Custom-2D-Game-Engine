@@ -6,13 +6,13 @@ namespace Engine {
 	class State
 	{
 	public:
-		State() {}
+		 State() {}
 		~State() {}
 	public:
-		virtual void Init(sf::RenderWindow* window) {}
-		virtual void HandleInput(sf::RenderWindow* window) {}
-		virtual void Update(sf::RenderWindow* window) {}
-		virtual void Render(sf::RenderWindow* window) {}
-		virtual void Destroy(sf::RenderWindow* window) {}
+		virtual void Init        (sf::RenderWindow* window) = 0;
+		virtual void HandleInput (sf::RenderWindow* window) = 0;
+		virtual void Update      (sf::RenderWindow* window) = 0;
+		virtual void Render      (sf::RenderWindow* window) = 0;
+		virtual void Destroy     (sf::RenderWindow* window) = 0;
 	};
 }

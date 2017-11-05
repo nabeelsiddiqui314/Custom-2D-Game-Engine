@@ -22,20 +22,20 @@ namespace Engine {
 	class MapManager : public sf::Sprite
 	{
 	public:
-		MapManager();
+		 MapManager();
 		~MapManager();
 	public:
 		void Load(std::string filename);
-		int CheckCollision(Entity* ent, Direction dir);
+		int  CheckCollision(Entity* ent, Direction dir);
 	protected:
 		std::string m_tileset;
-		int m_width = 0;
-		int m_height = 0;
-		int m_tileWidth = 0;
-		int m_tileHeight = 0;
-		int* m_MapData;
+		int         m_width      = 0;
+		int         m_height     = 0;
+		int         m_tileWidth  = 0;
+		int         m_tileHeight = 0;
+		int*        m_MapData;
 	private:
 		sf::Texture m_texture;
-		sf::Image m_tilesetImg;
+		sf::Image   m_tilesetImg;
 	};
 }

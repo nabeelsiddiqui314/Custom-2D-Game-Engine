@@ -15,7 +15,7 @@ namespace Engine {
 		m_entities.insert(std::make_pair(name, entity));
 	}
 
-	Entity* EntityManager::Get(std::string name) {
+	Entity* EntityManager::Get(std::string name) const {
 		std::unordered_map <std::string, Entity*>::const_iterator found = m_entities.find(name);
 		if (found == m_entities.end())
 			return NULL;
@@ -56,7 +56,7 @@ namespace Engine {
 		return true;
 	}
 
-	void EntityManager::Render(sf::RenderWindow* window) {
+	void EntityManager::Render(sf::RenderWindow* window) const {
 		for (auto& iterator : m_entities) {
 			window->draw(*iterator.second);
 		}

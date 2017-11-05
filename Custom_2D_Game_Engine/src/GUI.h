@@ -9,12 +9,12 @@ namespace Engine {
 		GUI(sf::RenderWindow* window);
 		~GUI();
 	public:
-		bool isHovered(sf::RectangleShape& button);
-		bool isClicked(sf::RectangleShape& button, float delayTime);
-		void SetPointer(sf::RectangleShape& pointer, bool hideMouse);
+		bool isHovered (sf::RectangleShape& button)                  const;
+		void SetPointer(sf::RectangleShape& pointer, bool hideMouse) const;
+		bool isClicked (sf::RectangleShape& button, float delayTime) const;
 	private:
-		sf::RenderWindow& m_window;
-		sf::Clock m_clock;
-		sf::Time m_delayTime;
+		sf::RenderWindow&         m_window;
+		mutable sf::Clock         m_clock;
+		mutable sf::Time          m_delayTime;
 	};
 }

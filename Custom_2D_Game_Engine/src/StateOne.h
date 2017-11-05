@@ -17,11 +17,11 @@ public:
 	void Render(sf::RenderWindow* window);
 	void Destroy(sf::RenderWindow* window);
 private:
-	Engine::data* m_data;
+	Engine::data*      m_data;
 	sf::RectangleShape m_rect;
 	sf::RectangleShape m_button;
-	Engine::Particle* m_particle;
-	sf::Clock m_clock;
-	sf::Time m_time;
-	sf::View m_view;
+	Engine::Particle*  m_particle;
+	sf::Clock          m_clock;
+	sf::Time           m_time;
+	sf::View           m_view;
 };
