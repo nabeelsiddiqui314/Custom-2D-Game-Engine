@@ -8,10 +8,10 @@ public:
 	TestEntity(Engine::data* data);
 	~TestEntity();
 public:
-	bool Update(sf::RenderWindow* window);
+	bool Update(sf::RenderWindow& window);
 	void Collision(Entity* entity);
 private:
 	Engine::data* m_data;
-	sf::Vector2i coords[2] = { sf::Vector2i(2,2), sf::Vector2i(50,50) };
+	std::vector<sf::Vector2i> coords = { sf::Vector2i(2,2), sf::Vector2i(50,50) };
 };
 

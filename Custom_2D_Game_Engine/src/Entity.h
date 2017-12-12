@@ -11,7 +11,7 @@ namespace Engine {
 
 	public:
 		void         Gravity();
-		virtual bool Update(sf::RenderWindow* window);
+		virtual bool Update(sf::RenderWindow& window);
 		bool         CheckCollision(Entity* entity);
 		virtual void Collision(Entity* ent) {}
 		void         Destroy();

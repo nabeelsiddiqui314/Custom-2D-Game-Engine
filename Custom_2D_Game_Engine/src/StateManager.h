@@ -9,7 +9,7 @@ namespace Engine {
 		 StateManager();
 		~StateManager();
 	public:
-		void SetWindow (sf::RenderWindow* window);
+		void SetWindow (sf::RenderWindow& window);
 
 		void SetState          (State* state);
 		void SetSecondaryState (State* state);

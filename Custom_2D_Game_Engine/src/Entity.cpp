@@ -22,7 +22,7 @@ namespace Engine {
 		}
 	}
 
-	bool Entity::Update(sf::RenderWindow* window) {
+	bool Entity::Update(sf::RenderWindow& window) {
 		Gravity();
 		move(0, m_GravitySpeed);
 		move(m_velocity);

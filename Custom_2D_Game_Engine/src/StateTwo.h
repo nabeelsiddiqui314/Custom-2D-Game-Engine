@@ -8,11 +8,11 @@ public:
 	StateTwo(Engine::data* data);
 	~StateTwo();
 public:
-	void Init(sf::RenderWindow* window);
-	void HandleInput(sf::RenderWindow* window);
-	void Update(sf::RenderWindow* window);
-	void Render(sf::RenderWindow* window);
-	void Destroy(sf::RenderWindow* window);
+	void Init        (sf::RenderWindow& window)	override;
+	void HandleInput (sf::RenderWindow& window)	override;
+	void Update      (sf::RenderWindow& window)	override;
+	void Render      (sf::RenderWindow& window)	override;
+	void Destroy     (sf::RenderWindow& window)	override;
 private:
 	Engine::data*      m_data;
 	sf::RectangleShape m_rect;

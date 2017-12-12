@@ -1,7 +1,7 @@
 #pragma once
 #include "StateManager.h"
 #include "ResourceManager.h"
-#include "GUI.h"
+#include "Interface.h"
 #include "EntityManager.h"
 #include "MapManager.h"
 #include "Animation.h"
@@ -13,7 +13,6 @@ namespace Engine {
 	struct data {
 		StateManager*    state;
 		ResourceManager* assets;
-		GUI*             gui;
 		EntityManager*   entity;
 		MapManager*      map;
 		Animation*       animation;

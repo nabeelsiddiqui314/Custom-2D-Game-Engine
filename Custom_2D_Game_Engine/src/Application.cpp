@@ -7,8 +7,7 @@ namespace Engine {
 		m_window.setFramerateLimit(60);
 		m_data = new data();
 		m_data->state = new StateManager();
-		m_data->gui = new GUI(&m_window);
-		m_data->state->SetWindow(&m_window);
+		m_data->state->SetWindow(m_window);
 		m_data->state->SetState(new InitialState(m_data));
 		this->Run();
 	}
@@ -36,7 +35,6 @@ namespace Engine {
 
 	Application::~Application() {
 		delete m_data->state;
-		delete m_data->gui;
 		delete m_data;
 	}
 }

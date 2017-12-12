@@ -63,9 +63,6 @@
     <ClInclude Include="src\EntityManager.h">
       <Filter>Header Files\Engine</Filter>
     </ClInclude>
-    <ClInclude Include="src\GUI.h">
-      <Filter>Header Files\Engine</Filter>
-    </ClInclude>
     <ClInclude Include="src\InitialState.h">
       <Filter>Header Files\Engine\E_properties</Filter>
     </ClInclude>
@@ -90,6 +87,9 @@
     <ClInclude Include="src\RangeChecker.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Interface.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\StateOne.cpp">
@@ -113,9 +113,6 @@
     <ClCompile Include="src\EntityManager.cpp">
       <Filter>Source Files\Engine</Filter>
     </ClCompile>
-    <ClCompile Include="src\GUI.cpp">
-      <Filter>Source Files\Engine</Filter>
-    </ClCompile>
     <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -136,6 +133,9 @@
     </ClCompile>
     <ClCompile Include="src\RangeChecker.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Interface.cpp">
+      <Filter>Source Files\Engine</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

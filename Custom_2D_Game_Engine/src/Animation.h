@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include <vector>
 
 namespace Engine {
 	class Animation
@@ -9,8 +10,7 @@ namespace Engine {
 		Animation();
 		~Animation();
 	public:
-		void Animate(sf::RectangleShape& rect  , sf::Vector2i size, 
-			         sf::Vector2i startCoords[], int arraySize, float deltaTime);
+		void Animate(sf::RectangleShape& rect, sf::Vector2i size, std::vector<sf::Vector2i> startCoords, float deltaTime);
 	private:
 		sf::Clock m_animationClock;
 		sf::Time  m_animationTIme;

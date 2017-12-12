@@ -23,7 +23,7 @@ namespace Engine {
 			return found->second;
 	}
 
-	bool EntityManager::Update(sf::RenderWindow* window) {
+	bool EntityManager::Update(sf::RenderWindow& window) {
 		std::vector <std::string> RemoveList;
 		for (auto& iterator : m_entities) {
 			if (iterator.second->Exists()) {
@@ -56,9 +56,9 @@ namespace Engine {
 		return true;
 	}
 
-	void EntityManager::Render(sf::RenderWindow* window) const {
+	void EntityManager::Render(sf::RenderWindow& window) const {
 		for (auto& iterator : m_entities) {
-			window->draw(*iterator.second);
+			window.draw(*iterator.second);
 		}
 	}
 

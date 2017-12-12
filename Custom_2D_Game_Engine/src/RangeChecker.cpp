@@ -18,10 +18,7 @@ namespace Engine {
 	}
 
 	bool RangeChecker::isInRange(sf::RectangleShape& rect1, sf::RectangleShape& rect2, float radius) const {
-		if (CheckDistance(rect1, rect2) < radius)
-			return true;
-		else
-			return false;
+		return CheckDistance(rect1, rect2) < radius;
 	}
 
 	RangeChecker::~RangeChecker()

@@ -6,7 +6,7 @@ StateOne::StateOne(Engine::data* data) : m_data(data) {
 	
 }
 
-void StateOne::Init(sf::RenderWindow* window) {
+void StateOne::Init(sf::RenderWindow& window) {
 	m_data->map = new Engine::MapManager();
 	m_data->entity = new Engine::EntityManager();
 	m_data->assets = new Engine::ResourceManager();
@@ -22,7 +22,7 @@ void StateOne::Init(sf::RenderWindow* window) {
 	m_data->entity->Add("test1", new TestEntity(m_data));
 }
 
-void StateOne::HandleInput(sf::RenderWindow* window) {
+void StateOne::HandleInput(sf::RenderWindow& window) {
 	m_time = m_clock.getElapsedTime();
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape) && m_time.asMilliseconds() > 200) {
 		m_clock.restart();
@@ -33,18 +33,18 @@ void StateOne::HandleInput(sf::RenderWindow* window) {
 	}
 }
 
-void StateOne::Update(sf::RenderWindow* window) {
+void StateOne::Update(sf::RenderWindow& window) {
 	m_data->entity->Update(window);
 }
 
-void StateOne::Render(sf::RenderWindow* window) {
-	window->draw(*m_data->map);
-	window->draw(m_rect);
-	window->draw(m_button);
+void StateOne::Render(sf::RenderWindow& window) {
+	window.draw(*m_data->map);
+	window.draw(m_rect);
+	window.draw(m_button);
 	m_data->entity->Render(window);
 }
 
-void StateOne::Destroy(sf::RenderWindow* window) {
+void StateOne::Destroy(sf::RenderWindow& window) {
 	delete m_data->map;
 	delete m_data->assets;
 	delete m_data->entity;

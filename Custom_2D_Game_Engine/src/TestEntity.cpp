@@ -13,9 +13,9 @@ TestEntity::TestEntity(Engine::data* data) : m_data(data) {
 	setTexture(&m_data->assets->GetTexture("player"));
 }
 
-bool TestEntity::Update(sf::RenderWindow* window) {
+bool TestEntity::Update(sf::RenderWindow& window) {
 	move(1,1);
-	m_data->animation->Animate(*this, sf::Vector2i(30,48), coords, 2, 100);
+	m_data->animation->Animate(*this, sf::Vector2i(30,48), coords, 100);
 	Entity::Update(window);
 	return true;
 }
